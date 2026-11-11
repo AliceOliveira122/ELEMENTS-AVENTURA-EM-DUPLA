@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elements - Aventura em Dupla</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-wrapper">
+    <header>
+      <div>
+        <h1>ELEMENTS</h1>
+        <p>Uma aventura em dupla!</p>
+      </div>
+      <div class="hud">
+        <span id="level">FASE 1</span>
+        <span id="gems">💎 0 / 6</span>
+        <span id="timer">⏱ 00:00</span>
+      </div>
+    </header>
+
+    <section class="game-panel">
+      <div class="canvas-container">
+        <canvas id="game" width="960" height="540"></canvas>
+
+        <div id="overlay" class="overlay">
+          <div class="overlay-card">
+            <div class="logo">🔥 💧</div>
+            <h2 id="overlay-title">ELEMENTS</h2>
+            <p id="overlay-text">
+              Dois heróis, dois elementos e um único objetivo:
+              chegar juntos à saída!
+            </p>
+            <button id="start-button">COMEÇAR A AVENTURA</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="control fire-control">
+          <strong>🔥 FOGUINHO</strong>
+          <span>A / D para andar</span>
+          <span>W para pular</span>
+        </div>
+        <div class="control water-control">
+          <strong>💧 ÁGUA-GELINHO</strong>
+          <span>← / → para andar</span>
+          <span>↑ para pular</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bottom-info">
+      <span>💎 Colete os cristais</span>
+      <span>🚪 Chegue às duas portas</span>
+      <span>⚠️ Cuidado com os elementos!</span>
+    </div>
+
+    <div class="mobile-controls">
+      <div>
+        <button data-key="a">◀</button>
+        <button data-key="d">▶</button>
+        <button data-key="w">▲</button>
+      </div>
+      <div>
+        <button data-key="arrowleft">◀</button>
+        <button data-key="arrowright">▶</button>
+        <button data-key="arrowup">▲</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
